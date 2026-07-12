@@ -59,9 +59,7 @@ import "../styles/global.css";
         <a href="#join">Join</a>
       </nav>
 
-      <a class="header-cta" href="https://www.foundersclub.asia/" target="_blank" rel="noopener noreferrer">
-        Founders Club
-      </a>
+      <a class="header-cta" href="#join">Request info</a>
     </header>
 
     <main id="top">
@@ -76,8 +74,8 @@ import "../styles/global.css";
           </p>
 
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#join">Plan a warm invite</a>
-            <a class="button secondary" href="#community">Explore the circle</a>
+            <a class="button primary" href="#join">Join Our Next Community Session</a>
+            <a class="button secondary" href="#events">View Weekly Activities</a>
           </div>
 
           <dl class="hero-metrics" aria-label="Community snapshot">
@@ -87,7 +85,7 @@ import "../styles/global.css";
             </div>
             <div>
               <dt>7</dt>
-              <dd>gentle follow-ups</dd>
+              <dd>gentle follow up</dd>
             </div>
             <div>
               <dt>4</dt>
@@ -137,6 +135,30 @@ import "../styles/global.css";
             <span>Real talk</span>
             <span>Warm invites</span>
             <span>Founder mindset</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trust-section" aria-labelledby="trust-heading">
+        <div class="trust-card">
+          <div>
+            <p class="eyebrow">Connected community</p>
+            <h2 id="trust-heading">Your softer first step into the wider Founders Club ecosystem.</h2>
+          </div>
+          <div class="trust-copy">
+            <p>
+              Glow & Grow Studio is my personal community bridge into Founders Club - created
+              for people who want to start with wellness, movement, self-care, and real
+              connection in a softer, more beginner-friendly way.
+            </p>
+            <p>
+              Through Glow & Grow Studio, I personally introduce you to suitable Founders Club
+              activities such as HIIT, badminton, wellness sessions, and community gatherings,
+              so you can join with more confidence instead of feeling like you are walking in alone.
+            </p>
+            <a class="trust-link" href="https://www.foundersclub.asia/" target="_blank" rel="noopener noreferrer">
+              Learn more about Founders Club Asia
+            </a>
           </div>
         </div>
       </section>
@@ -265,52 +287,86 @@ import "../styles/global.css";
       <section id="join" class="section join-section">
         <div class="join-shell">
           <div>
-            <p class="eyebrow">Plan the next warm invite</p>
-            <h2>Create a cozy draft update for your next community follow-up.</h2>
+            <p class="eyebrow">Request club information</p>
+            <h2>Curious about Founders Club? Ask for the details here.</h2>
             <p>
-              This form previews the future member update tool: a simple way to turn your thoughts
-              into a kind message before inviting someone into the Founders Club vibe.
+              Leave a quick note about what you want to understand, whether it is Coffee with
+              Founders, sports sessions, networking, wellness activities, or how to join the
+              community. We will help you find the warmest next step.
             </p>
           </div>
 
           <form class="invite-form" id="inviteForm">
             <label>
-              Person or small circle
-              <input id="groupInput" type="text" placeholder="Example: Badminton friends" />
+              Your name
+              <input id="nameInput" type="text" placeholder="Example: Hui Chen" autocomplete="name" />
             </label>
             <label>
-              Best fit
+              WhatsApp or email
+              <input id="contactInput" type="text" placeholder="Example: +60... or hello@email.com" autocomplete="email" />
+            </label>
+            <label>
+              I want to know about
               <select id="interestInput">
                 <option>Coffee with Founders</option>
                 <option>Connect: games and networking</option>
-                <option>Move: sports and wellness</option>
-                <option>Grow: mindset and business</option>
-                <option>Warm product sharing</option>
+                <option>Move: sports and wellness sessions</option>
+                <option>Grow: mindset and business circle</option>
+                <option>Membership and joining process</option>
+                <option>Upcoming Founders Club events</option>
               </select>
             </label>
             <label>
-              Warm next step
-              <textarea id="actionInput" placeholder="Example: Invite to Coffee with Founders and send a friendly reminder on Friday"></textarea>
+              What would you like to ask?
+              <textarea id="messageInput" placeholder="Example: I would like to know the next session date, location, and how to join."></textarea>
             </label>
-            <button type="submit">Generate cozy update</button>
+            <button type="submit">Preview my request</button>
           </form>
 
           <aside class="draft-preview" aria-live="polite">
-            <span>Draft preview</span>
-            <h3 id="previewTitle">Badminton friends</h3>
+            <span>Lead preview</span>
+            <h3 id="previewTitle">Founders Club inquiry</h3>
             <p id="previewBody">
-              Invite this circle to Move: sports and wellness. Suggested next step: confirm the
-              next cozy community moment and send a warm reminder.
+              Hi Founders Club, I would like to request more information about Coffee with
+              Founders and the warmest way to join the community.
             </p>
+            <a id="leadWhatsappLink" class="preview-action" href="https://wa.me/60104675275?text=Hi%20Founders%20Club%2C%20I%20would%20like%20to%20request%20more%20information%20about%20Coffee%20with%20Founders%20and%20the%20warmest%20way%20to%20join%20the%20community." target="_blank" rel="noopener noreferrer">Send request on WhatsApp</a>
           </aside>
+        </div>
+      </section>
+
+      <section class="section faq-section" aria-labelledby="faq-heading">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Quick clarity</p>
+          <h2 id="faq-heading">Common questions before your first session.</h2>
+        </div>
+
+        <div class="faq-list">
+          <article>
+            <h3>Is Glow & Grow Studio part of Founders Club?</h3>
+            <p>
+              Glow & Grow Studio is my personal community bridge connected with Founders Club
+              Asia. I use this space to personally introduce people to suitable wellness
+              activities, sports sessions, self-care ideas, and community moments before they
+              join the wider Founders Club ecosystem.
+            </p>
+          </article>
+          <article>
+            <h3>Should I contact Glow & Grow Studio first?</h3>
+            <p>
+              Yes. The warmest path is to ask through Glow & Grow Studio first, so I can share
+              the next suitable session, what to expect, and which activity fits your comfort level.
+            </p>
+          </article>
         </div>
       </section>
     </main>
 
     <footer>
       <strong>Glow-Grow-Studio</strong>
-      <span>A warm personal community lounge connected with Founders Club.</span>
-      <a href="https://www.foundersclub.asia/" target="_blank" rel="noopener noreferrer">Founders Club Asia</a>
+      <span>Connected community: Founders Club Asia. Join through Glow & Grow Studio for a more personal introduction.</span>
+      <a href="#join">Request club information</a>
+      <a href="https://www.foundersclub.asia/" target="_blank" rel="noopener noreferrer">Learn more about Founders Club Asia</a>
     </footer>
 
     <script is:inline src="/app.js"></script>
