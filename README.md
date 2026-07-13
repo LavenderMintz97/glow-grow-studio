@@ -1,14 +1,14 @@
-# Glow & Grow Studio
+# Glow & Grow Circle
 
-Glow & Grow Studio is a Founders Community personal brand website, beauty and wellness product curation platform, community hub, content studio, and mini app collection.
+Glow & Grow Circle is a personal community and portfolio website for casual sports, wellness activities, warm connection, beginner-friendly networking, and everyday growth.
 
 ## Focus
 
-- Personal portfolio for story, hobbies, creativity, writing, design taste, and projects
-- Beauty and health product curation with reviews and routine context
-- Founders Community hub for meetups, challenges, and member stories
-- Lifestyle guides, beauty routines, wellness reflections, and personal growth posts
-- Vibe code apps for planners, habit tracking, and product matching
+- Beginner-friendly community positioning
+- Casual wellness badminton and simple movement sessions
+- Social wellness meetups and meaningful everyday connection
+- Personal portfolio context for community-building, wellness, content, digital marketing, and offline experiences
+- Clear contact CTA for joining the next session
 
 ## Run Locally
 
@@ -28,12 +28,10 @@ npm run build
 - Framework preset: Astro
 - Build command: `npm run build`
 - Build output directory: `dist`
-- Project name: `glow-grow-studio`
+- Existing Pages project name: `glow-grow-studio`
 
 Deploy with:
 
 ```bash
 npm run deploy
 ```
-
-After deployment, add your custom domain in Cloudflare Pages under **Custom domains**.
