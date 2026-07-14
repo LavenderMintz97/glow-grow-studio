@@ -107,6 +107,17 @@ const faqs = [
     <title>Glow & Grow Circle | Move Freely. Meet Naturally. Grow Gently.</title>
     <link rel="icon" href="/favicon.svg" />
     <style>
+      .brand-badge {
+        background: #fffdf8;
+        overflow: hidden;
+      }
+
+      .brand-badge img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
       .moment-card {
         position: relative;
         isolation: isolate;
@@ -145,7 +156,9 @@ const faqs = [
   <body>
     <header class="site-header" aria-label="Site header">
       <a class="brand" href="#top" aria-label="Glow & Grow Circle home">
-        <span class="brand-badge">GG</span>
+        <span class="brand-badge" aria-hidden="true">
+          <img src="/logo-mark.svg" alt="" width="44" height="44" />
+        </span>
         <span>
           <strong>Glow & Grow Circle</strong>
           <small>Move Freely. Meet Naturally. Grow Gently.</small>
