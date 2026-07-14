@@ -57,9 +57,24 @@ const expectations = [
 ];
 
 const moments = [
-  ["Event photos", "Small-group activities and warm community snapshots", "moment-event"],
-  ["Badminton photos", "Casual games, shared movement, and friendly rallies", "moment-badminton"],
-  ["Group activity photos", "Walks, hangouts, sharing days, and gentle growth moments", "moment-group"],
+  [
+    "Event photos",
+    "Small-group activities and warm community snapshots",
+    "moment-event",
+    "/images/community/Event%20Photo.jpeg",
+  ],
+  [
+    "Badminton photos",
+    "Casual games, shared movement, and friendly rallies",
+    "moment-badminton",
+    "/images/community/Badminton%20Photo.jpeg",
+  ],
+  [
+    "Group activity photos",
+    "Walks, hangouts, sharing days, and gentle growth moments",
+    "moment-group",
+    "/images/community/Group%20Activity%20Photo.jpeg",
+  ],
 ];
 
 const quotes = [
@@ -107,6 +122,32 @@ const faqs = [
     <title>Glow & Grow Circle | Move Freely. Meet Naturally. Grow Gently.</title>
     <link rel="icon" href="/favicon.svg" />
     <link rel="preconnect" href="https://images.unsplash.com" />
+    <style>
+      .moment-card {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        background-image: none !important;
+      }
+
+      .moment-card img {
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .moment-card::after {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient(180deg, rgba(17, 24, 22, 0.05), rgba(17, 24, 22, 0.58));
+        content: "";
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -282,7 +323,13 @@ const faqs = [
           <h2>Small highlights, warm memories, and honest member notes.</h2>
         </div>
         <div class="moments-grid">
-          {moments.map(([title, copy, className]) => <article class={`moment-card ${className}`}><span>{title}</span><p>{copy}</p></article>)}
+          {moments.map(([title, copy, className, imageSrc]) => (
+            <article class={`moment-card ${className}`}>
+              <img src={imageSrc} alt={`${title} from Glow & Grow Circle`} loading="lazy" />
+              <span>{title}</span>
+              <p>{copy}</p>
+            </article>
+          ))}
         </div>
         <div class="quote-grid">
           {quotes.map((quote) => <article><p>"{quote}"</p></article>)}
