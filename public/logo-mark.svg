@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Glow &amp; Grow Circle logo mark</title>
+  <desc id="desc">A warm circular GG monogram with leaf and gentle growth accents.</desc>
+  <defs>
+    <linearGradient id="ggGradient" x1="18" y1="18" x2="110" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#284A38"/>
+      <stop offset="0.52" stop-color="#6F9274"/>
+      <stop offset="1" stop-color="#DF7B68"/>
+    </linearGradient>
+    <linearGradient id="leafGradient" x1="45" y1="24" x2="86" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#DFF1E3"/>
+      <stop offset="1" stop-color="#FFF1BD"/>
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="58" fill="#FFFDF8"/>
+  <circle cx="64" cy="64" r="54" fill="url(#ggGradient)"/>
+  <circle cx="64" cy="64" r="43" fill="none" stroke="rgba(255,253,248,0.42)" stroke-width="2"/>
+  <path d="M75.5 27.5C60.8 29.6 51.5 38.6 49.7 52.2C62.6 53.4 74.2 45.7 78.9 31.2C79.5 29.5 77.4 27.2 75.5 27.5Z" fill="url(#leafGradient)"/>
+  <path d="M56 51.5C61.6 44.8 67.5 39.6 76.5 32.5" fill="none" stroke="#284A38" stroke-width="3" stroke-linecap="round" opacity="0.42"/>
+  <text x="64" y="78" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="45" font-weight="900" letter-spacing="-4" fill="#FFFDF8">GG</text>
+  <path d="M38 91C47 99 82 101 93 88" fill="none" stroke="#FFD8C2" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+</svg>
